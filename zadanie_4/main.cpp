@@ -1,7 +1,6 @@
 // Testy (nie zmieniaj). Rozwiązanie piszesz w log_analysis.cpp.
 
 #include <algorithm>
-#include <map>
 #include <set>
 #include <string>
 #include <vector>
@@ -41,10 +40,6 @@ int main() {
     check(last_in_first_ten.has_value() && last_in_first_ten->time == 25,
           "last_problem: w pierwszych 10 wpisach - 25. sekunda");
     check(!last_problem(only_info).has_value(), "last_problem: same wpisy Info - brak problemu");
-
-    const std::map<std::string, int> expected_max = { { "api", 2310 }, { "auth", 1105 }, { "cache", 6 }, { "db", 5000 } };
-    check(max_response_by_module(logs) == expected_max, "max_response_by_module: api 2310, auth 1105, cache 6, db 5000");
-    check(max_response_by_module(no_logs).empty(), "max_response_by_module: pusty log");
 
     return summary();
 }

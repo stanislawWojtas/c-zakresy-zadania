@@ -34,8 +34,3 @@ std::optional<LogEntry> last_problem(const std::vector<LogEntry>& logs) {
     // TODO
     return std::nullopt;
 }
-
-std::map<std::string, int> max_response_by_module(const std::vector<LogEntry>& logs) {
-    // TODO
-    return {};
-}

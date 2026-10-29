@@ -37,7 +37,6 @@ bool has_surname(const std::vector<Student>& students, const std::string& surnam
 }
 
 // e) Nazwisko ostatniego studenta z danego roku albo "brak".
-// Zwróć uwage na to co zwraca std::ranges::find_last() !!!
 std::string last_from_year(const std::vector<Student>& students, int year) {
     // TODO
     return "";
@@ -49,8 +48,7 @@ bool nobody_below(const std::vector<Student>& students, double threshold) {
     return false;
 }
 
-// g) Nazwiska studentów ze średnią >= 4.5 (filter + transform + ranges::to).
-// TIP: użyj potoku "|" oras funkcji std::ranges::views::filter, std::views::transform, std::ranges::to
+// g) Nazwiska studentów ze średnią >= 4.5.
 std::vector<std::string> scholarship_surnames(const std::vector<Student>& students) {
     // TODO
     return {};

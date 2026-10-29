@@ -1,7 +1,6 @@
 // Zadanie 1: przepisz program na std::ranges (README.md).
 // Wynik programu ma się nie zmienić !!!.
 
-// Zwroc uwage na uzyte funkcje - potraktuj to jak wprowadzenie do tych funkcji
 #include <algorithm>
 #include <iostream>
 #include <string>

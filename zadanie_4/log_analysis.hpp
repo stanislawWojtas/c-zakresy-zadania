@@ -1,7 +1,6 @@
 #pragma once
 
 #include <cstddef>
-#include <map>
 #include <optional>
 #include <set>
 #include <string>
@@ -26,6 +25,3 @@ std::set<std::string> modules(const std::vector<LogEntry>& logs);
 
 // Ostatni wpis Error lub Critical (albo std::nullopt).
 std::optional<LogEntry> last_problem(const std::vector<LogEntry>& logs);
-
-// Moduł -> najdłuższy czas odpowiedzi.
-std::map<std::string, int> max_response_by_module(const std::vector<LogEntry>& logs);
