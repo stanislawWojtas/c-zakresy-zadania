@@ -1,7 +1,5 @@
 # Zakresy (`std::ranges`): zadania
 
-Materiały: [`zakresy-materialy.md`](zakresy-materialy.md) · Dokumentacja: [cppreference](https://en.cppreference.com/cpp/algorithm/ranges) · Czas: około godziny, może dłużej
-
 ## Jak zacząć
 
 - Wymagany **C++23** 
